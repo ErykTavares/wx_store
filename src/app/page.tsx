@@ -1,8 +1,11 @@
+'use client';
+
+import DefaultLayout from '@/layout/defaultLayout';
 import React from 'react';
 
 const Home = (): JSX.Element => (
-	<main className='flex min-h-screen flex-col items-center justify-between p-24'>
+	<DefaultLayout>
 		<div>test</div>
-	</main>
+	</DefaultLayout>
 );
 export default Home;
