@@ -7,6 +7,8 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import persistStore from 'redux-persist/es/persistStore';
 import { store } from '@/store';
+import theme from '@/style/theme';
+import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from '../style/global';
 
 const roboto = Roboto({ weight: '400', subsets: ['latin'] });
@@ -25,8 +27,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
 				<Provider store={store}>
 					<PersistGate loading={null} persistor={persistor}>
 						<StyledComponentsRegistry>
-							<GlobalStyle />
-							{children}
+							<ThemeProvider theme={theme}>
+								<GlobalStyle />
+								{children}
+							</ThemeProvider>
 						</StyledComponentsRegistry>
 					</PersistGate>
 				</Provider>
