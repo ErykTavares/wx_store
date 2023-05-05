@@ -21,17 +21,19 @@ export const GlobalStyle = createGlobalStyle`
 
 				main {
 					width: 100%;
+					min-height: 100vh;
 					display: flex;
 					flex-direction: column;
-					align-items: center;
+					align-items: start;
+					justify-content: start;
 				}
 
 				section {
 					width: 100%;
-					min-height: 100vh;
-					display: flex;
-					align-items: center;
-					justify-content: center;
+					height: calc(100vh - 100px - 60px);
+					overflow-y: auto;
+					overflow-x: hidden;
+					scroll-behavior: smooth;
 				}
 
 				img {

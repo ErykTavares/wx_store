@@ -73,6 +73,7 @@
 		"jsx-a11y/no-noninteractive-element-interactions": "off",
 		"react/button-has-type": "off",
 		"no-underscore-dangle": "off",
-		"react-hooks/exhaustive-deps": "off"
+		"react-hooks/exhaustive-deps": "off",
+		"@typescript-eslint/strict-boolean-expressions": "off"
 	}
 }

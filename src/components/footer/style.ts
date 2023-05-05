@@ -15,6 +15,7 @@ export const FooterStyle = styled.footer`
 			cursor: pointer;
 			font-weight: 600;
 			transition: all 0.3s;
+			color: white;
 
 			&:hover {
 				color: ${theme.colors.red};

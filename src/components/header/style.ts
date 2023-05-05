@@ -23,8 +23,9 @@ export const Wrapper = styled.div`
 
 		h1 {
 			color: white;
-			font-size: 3rem;
+			font-size: 2.5rem;
 			font-weight: 600;
+			cursor: pointer;
 
 			span {
 				color: ${theme.colors.red};
