@@ -16,6 +16,16 @@ const nextConfig = {
 		});
 
 		return config;
+	},
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'fakestoreapi.com',
+				port: '',
+				pathname: '/img/**'
+			}
+		]
 	}
 };
 
