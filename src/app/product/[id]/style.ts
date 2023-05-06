@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 
 export const Container = styled.section`
@@ -17,6 +19,19 @@ export const Wrapper = styled.div`
 		width: max-content;
 		height: auto;
 	}
+
+	@media screen and (max-width: 835px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.container-img {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 1rem;
+		}
+	}
 `;
 
 export const Content = styled.div`
@@ -34,5 +49,11 @@ export const Content = styled.div`
 
 	h4 {
 		font-size: 1.125rem;
+	}
+
+	@media screen and (max-width: 835px) {
+		width: 100%;
+		padding: 0 1.2rem;
+		margin-bottom: 1rem;
 	}
 `;
